@@ -1,0 +1,28 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workbench ActiveDocument="AdjustableFarmRainColors/manifest.json">
+    <Files>
+      <File FileName="AdjustableFarmRainColors/ModEntry.cs" Line="26" Column="65" />
+      <File FileName="AdjustableFarmRainColors/Framework/ModConfig.cs" Line="10" Column="45" />
+      <File FileName="AdjustableFarmRainColors/manifest.json" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="AdjustableFarmRainColors" expanded="True">
+            <Node name="AdjustableFarmRainColors" expanded="True">
+              <Node name="Framework" expanded="True" />
+              <Node name="manifest.json" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.AdjustableFarmWaterColor FirstBuild="True" />
+  <MultiItemStartupConfigurations />
+</Properties>

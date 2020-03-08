@@ -1,0 +1,15 @@
+/home/brandon/dev/src/lang/C#/AdjustableFarmRainColors/AdjustableFarmRainColors/bin/Debug/AdjustableFarmRainColors.dll
+/home/brandon/dev/src/lang/C#/AdjustableFarmRainColors/AdjustableFarmRainColors/bin/Debug/AdjustableFarmRainColors.pdb
+/home/brandon/dev/src/lang/C#/AdjustableFarmRainColors/AdjustableFarmRainColors/obj/Debug/AdjustableFarmWaterColor.csproj.CoreCompileInputs.cache
+/home/brandon/dev/src/lang/C#/AdjustableFarmRainColors/AdjustableFarmRainColors/obj/Debug/AdjustableFarmRainColors.dll
+/home/brandon/dev/src/lang/C#/AdjustableFarmRainColors/AdjustableFarmRainColors/obj/Debug/AdjustableFarmRainColors.pdb
+/home/brandon/dev/src/lang/C#/AdjustableFarmWaterColor/AdjustableFarmWaterColor/bin/Debug/AdjustableFarmWaterColor.dll
+/home/brandon/dev/src/lang/C#/AdjustableFarmWaterColor/AdjustableFarmWaterColor/bin/Debug/AdjustableFarmWaterColor.pdb
+/home/brandon/dev/src/lang/C#/AdjustableFarmWaterColor/AdjustableFarmWaterColor/obj/Debug/AdjustableFarmWaterColor.csproj.CoreCompileInputs.cache
+/home/brandon/dev/src/lang/C#/AdjustableFarmWaterColor/AdjustableFarmWaterColor/obj/Debug/AdjustableFarmWaterColor.dll
+/home/brandon/dev/src/lang/C#/AdjustableFarmWaterColor/AdjustableFarmWaterColor/obj/Debug/AdjustableFarmWaterColor.pdb
+/home/brandon/dev/src/lang/C#/SpaceBaby.Stardew/AdjustableFarmWaterColor/AdjustableFarmWaterColor/bin/Debug/AdjustableFarmWaterColor.dll
+/home/brandon/dev/src/lang/C#/SpaceBaby.Stardew/AdjustableFarmWaterColor/AdjustableFarmWaterColor/bin/Debug/AdjustableFarmWaterColor.pdb
+/home/brandon/dev/src/lang/C#/SpaceBaby.Stardew/AdjustableFarmWaterColor/AdjustableFarmWaterColor/obj/Debug/AdjustableFarmWaterColor.csproj.CoreCompileInputs.cache
+/home/brandon/dev/src/lang/C#/SpaceBaby.Stardew/AdjustableFarmWaterColor/AdjustableFarmWaterColor/obj/Debug/AdjustableFarmWaterColor.dll
+/home/brandon/dev/src/lang/C#/SpaceBaby.Stardew/AdjustableFarmWaterColor/AdjustableFarmWaterColor/obj/Debug/AdjustableFarmWaterColor.pdb

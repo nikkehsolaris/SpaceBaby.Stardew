@@ -1,0 +1,34 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workbench ActiveDocument="AdjustableFarmWaterColor/AdjustableFarmWaterColor/manifest.json">
+    <Files>
+      <File FileName="SV_MidiInterface/SV_MidiInterface/manifest.json" Line="3" Column="56" />
+      <File FileName="SV_PotC/PartOfTheCommunity/manifest.json" Line="3" Column="44" />
+      <File FileName="BuildersList/BuildersList/manifest.json" Line="6" Column="22" />
+      <File FileName="SV_BetterQualityMoreSeeds/BetterQualityMoreSeeds/manifest.json" Line="6" Column="36" />
+      <File FileName="AdjustableFarmWaterColor/AdjustableFarmWaterColor/manifest.json" Line="6" Column="25" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="SpaceBaby.Stardew" expanded="True">
+            <Node name="AdjustableFarmWaterColor" expanded="True">
+              <Node name="manifest.json" selected="True" />
+            </Node>
+            <Node name="BetterQualityMoreSeeds" expanded="True" />
+            <Node name="BuildersList" expanded="True">
+              <Node name="Framework" expanded="True" />
+            </Node>
+            <Node name="MidiInterface" expanded="True" />
+            <Node name="PartOfTheCommunity" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

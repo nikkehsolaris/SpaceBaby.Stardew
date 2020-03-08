@@ -1,0 +1,10 @@
+﻿{
+  "Name": "Adjustable Farm Water Color",
+  "Author": "Brandon Marquis Markail Green (Space Baby)",
+  "Version": "1.0.0",
+  "Description": "Allows the User to change the color of the farm's water",
+  "UniqueID": "SpaceBaby.AdjustableFarmWaterColor",
+  "EntryDll": "AdjustableFarmWaterColor.dll",
+  "MinimumApiVersion": "3.1.0",
+  "UpdateKeys": []
+}
