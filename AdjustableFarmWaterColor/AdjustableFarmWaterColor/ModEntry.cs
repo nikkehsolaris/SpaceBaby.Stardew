@@ -16,6 +16,7 @@ namespace SpaceBaby.AdjustableFarmWaterColor
 
         public override void Entry(IModHelper helper)
         {
+            Farm = null;
             this.Config = this.Helper.ReadConfig<ModConfig>();
             helper.Events.GameLoop.SaveLoaded += GetFarm;
             helper.Events.Display.Rendering += ChangeWater;
@@ -23,6 +24,7 @@ namespace SpaceBaby.AdjustableFarmWaterColor
 
         private void ChangeWater(object sender, RenderingEventArgs e)
         {
+            if (Farm is null) return;
             if(Farm.waterColor.Value != this.Config.waterColor)
                 this.Farm.waterColor.Value = this.Config.waterColor;
         }
