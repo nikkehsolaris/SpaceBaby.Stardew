@@ -165,6 +165,9 @@ namespace SpaceBaby.PartOfTheCommunity
             foreach (KeyValuePair<string, Friendship> pair in Game1.player.friendshipData.Pairs)
             {
                 // get friend info
+				if ( pair.Key == null ) 
+					continue;
+				
                 if (!this.Characters.TryGetValue(pair.Key, out CharacterInfo friend))
                     continue;
 
@@ -216,6 +219,7 @@ namespace SpaceBaby.PartOfTheCommunity
             if (Game1.activeClickableMenu is ShopMenu shopMenu && this.Shops.TryGetValue(Game1.currentLocation.Name, out string shopOwnerName))
             {
                 // get shopkeeper
+				
                 if (!this.Characters.TryGetValue(shopOwnerName, out CharacterInfo shopkeeper))
                     return;
 
@@ -237,6 +241,9 @@ namespace SpaceBaby.PartOfTheCommunity
                 Utility.improveFriendshipWithEveryoneInRegion(Game1.player, this.Config.UmojaBonusFestival, 2);
                 foreach (KeyValuePair<string, Friendship> pair in Game1.player.friendshipData.Pairs)
                 {
+					if ( pair.Key == null )
+						continue; 
+					
                     string name = pair.Key;
                     Friendship friendship = pair.Value;
                     if (this.Characters.TryGetValue(name, out CharacterInfo character) && character.TryGetNpc(out NPC npc) && object.ReferenceEquals(npc.currentLocation, Game1.currentLocation))
@@ -247,8 +254,9 @@ namespace SpaceBaby.PartOfTheCommunity
             }
 
             // check if player is getting married or having a baby
-            if ((Game1.weddingToday || Game1.farmEvent is BirthingEvent) && !this.HasEnteredEvent && this.Characters.TryGetValue(Game1.player.spouse, out CharacterInfo spouse))
+            if ( !string.IsNullOrWhiteSpace(Game1.player.spouse) && (Game1.weddingToday || Game1.farmEvent is BirthingEvent) && !this.HasEnteredEvent )
             {
+                this.Characters.TryGetValue(Game1.player.spouse, out CharacterInfo spouse);
                 foreach (CharacterRelationship relation in spouse.Relationships)
                 {
                     if (!relation.Character.TryGetNpc(out NPC relationNpc))

@@ -1,9 +1,8 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdjustableFarmWaterColor", "AdjustableFarmWaterColor\AdjustableFarmWaterColor\AdjustableFarmWaterColor.csproj", "{D0274CD4-7D0A-455F-B2F4-8420764C0D18}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildersList", "BuildersList\BuildersList\BuildersList.csproj", "{268833D2-5A5F-45DB-88F3-0437A3DFA34A}"
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29926.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VerticalToolbar", "SV_VerticalToolMenu\VerticalToolbar\VerticalToolbar.csproj", "{268833D2-5A5F-45DB-88F3-0437A3DFA34A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BetterQualityMoreSeeds", "SV_BetterQualityMoreSeeds\BetterQualityMoreSeeds\BetterQualityMoreSeeds.csproj", "{BB0B24A0-9448-421E-87BD-BF3DA627B69E}"
 EndProject
@@ -11,16 +10,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MidiInterface", "SV_MidiInt
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PartOfTheCommunity", "SV_PotC\PartOfTheCommunity\PartOfTheCommunity.csproj", "{58913321-94A9-4B11-95C4-FABAEF78AE76}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RadialMenu", "RadialMenu\RadialMenu.csproj", "{44C6A3CD-78BC-4736-B617-394149282190}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdjustableFarmWaterColor", "AdjustableFarmWaterColor\AdjustableFarmWaterColor\AdjustableFarmWaterColor.csproj", "{D0274CD4-7D0A-455F-B2F4-8420764C0D18}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D0274CD4-7D0A-455F-B2F4-8420764C0D18}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{D0274CD4-7D0A-455F-B2F4-8420764C0D18}.Debug|x86.Build.0 = Debug|Any CPU
-		{D0274CD4-7D0A-455F-B2F4-8420764C0D18}.Release|x86.ActiveCfg = Release|Any CPU
-		{D0274CD4-7D0A-455F-B2F4-8420764C0D18}.Release|x86.Build.0 = Release|Any CPU
 		{268833D2-5A5F-45DB-88F3-0437A3DFA34A}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{268833D2-5A5F-45DB-88F3-0437A3DFA34A}.Debug|x86.Build.0 = Debug|Any CPU
 		{268833D2-5A5F-45DB-88F3-0437A3DFA34A}.Release|x86.ActiveCfg = Release|Any CPU
@@ -37,5 +36,19 @@ Global
 		{58913321-94A9-4B11-95C4-FABAEF78AE76}.Debug|x86.Build.0 = Debug|Any CPU
 		{58913321-94A9-4B11-95C4-FABAEF78AE76}.Release|x86.ActiveCfg = Release|Any CPU
 		{58913321-94A9-4B11-95C4-FABAEF78AE76}.Release|x86.Build.0 = Release|Any CPU
+		{44C6A3CD-78BC-4736-B617-394149282190}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{44C6A3CD-78BC-4736-B617-394149282190}.Debug|x86.Build.0 = Debug|Any CPU
+		{44C6A3CD-78BC-4736-B617-394149282190}.Release|x86.ActiveCfg = Release|Any CPU
+		{44C6A3CD-78BC-4736-B617-394149282190}.Release|x86.Build.0 = Release|Any CPU
+		{D0274CD4-7D0A-455F-B2F4-8420764C0D18}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D0274CD4-7D0A-455F-B2F4-8420764C0D18}.Debug|x86.Build.0 = Debug|Any CPU
+		{D0274CD4-7D0A-455F-B2F4-8420764C0D18}.Release|x86.ActiveCfg = Release|Any CPU
+		{D0274CD4-7D0A-455F-B2F4-8420764C0D18}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F2EECC23-308D-47C2-9DD8-DB5A3FDDF5A2}
 	EndGlobalSection
 EndGlobal

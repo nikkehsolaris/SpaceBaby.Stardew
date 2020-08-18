@@ -1,32 +1,30 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workbench ActiveDocument="AdjustableFarmWaterColor/AdjustableFarmWaterColor/manifest.json">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SV_PotC/PartOfTheCommunity/manifest.json">
     <Files>
-      <File FileName="SV_MidiInterface/SV_MidiInterface/manifest.json" Line="3" Column="56" />
-      <File FileName="SV_PotC/PartOfTheCommunity/manifest.json" Line="3" Column="44" />
-      <File FileName="BuildersList/BuildersList/manifest.json" Line="6" Column="22" />
-      <File FileName="SV_BetterQualityMoreSeeds/BetterQualityMoreSeeds/manifest.json" Line="6" Column="36" />
-      <File FileName="AdjustableFarmWaterColor/AdjustableFarmWaterColor/manifest.json" Line="6" Column="25" />
+      <File FileName="SV_BetterQualityMoreSeeds/BetterQualityMoreSeeds/Framework/SeedMakerMachinePatch.cs" Line="1" Column="1" />
+      <File FileName="../../../../../../../usr/lib/mono/msbuild/15.0/bin/Microsoft.CSharp.CurrentVersion.targets" Line="333" Column="5" />
+      <File FileName="SV_PotC/PartOfTheCommunity/Framework/ModConfig.cs" Line="1" Column="1" />
+      <File FileName="SV_PotC/PartOfTheCommunity/ModEntry.cs" Line="259" Column="92" />
+      <File FileName="SV_PotC/PartOfTheCommunity/manifest.json" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="SpaceBaby.Stardew" expanded="True">
-            <Node name="AdjustableFarmWaterColor" expanded="True">
+            <Node name="PartOfTheCommunity" expanded="True">
+              <Node name="Framework" expanded="True" />
               <Node name="manifest.json" selected="True" />
             </Node>
-            <Node name="BetterQualityMoreSeeds" expanded="True" />
-            <Node name="BuildersList" expanded="True">
-              <Node name="Framework" expanded="True" />
-            </Node>
-            <Node name="MidiInterface" expanded="True" />
-            <Node name="PartOfTheCommunity" expanded="True" />
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <DisabledProjects>
+    <String>AdjustableFarmWaterColor/AdjustableFarmWaterColor/AdjustableFarmWaterColor.csproj</String>
+  </DisabledProjects>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|x86" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
