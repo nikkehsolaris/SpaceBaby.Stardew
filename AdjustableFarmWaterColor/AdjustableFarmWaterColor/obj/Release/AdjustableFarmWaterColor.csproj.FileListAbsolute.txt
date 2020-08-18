@@ -1,3 +1,0 @@
-/home/brandon/dev/src/lang/C#/AdjustableFarmWaterColor/AdjustableFarmWaterColor/bin/Release/AdjustableFarmWaterColor.dll
-/home/brandon/dev/src/lang/C#/AdjustableFarmWaterColor/AdjustableFarmWaterColor/obj/Release/AdjustableFarmWaterColor.csproj.CoreCompileInputs.cache
-/home/brandon/dev/src/lang/C#/AdjustableFarmWaterColor/AdjustableFarmWaterColor/obj/Release/AdjustableFarmWaterColor.dll
