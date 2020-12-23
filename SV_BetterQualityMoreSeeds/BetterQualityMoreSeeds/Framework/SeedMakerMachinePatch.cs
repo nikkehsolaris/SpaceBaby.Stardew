@@ -31,7 +31,7 @@ namespace SpaceBaby.BetterQualityMoreSeeds.Framework
             Type IConsumable = __instance.GetType().Assembly.GetType("Pathoschild.Stardew.Automate.IConsumable");
 
 
-            MethodInfo Instance_IsValidCrop = __instance.GetType().GetMethod("IsValidCrop");
+            MethodInfo Instance_IsValidCrop = __instance.GetType().GetMethod("IsValidCrop", BindingFlags.NonPublic | BindingFlags.Instance);
 
             Func<dynamic, bool> func = x => (bool)Instance_IsValidCrop.Invoke(__instance, new object[] { x });
             Type[] TryGetIngredientParams = new Type[] { func.GetType(), typeof(int), IConsumable.MakeByRefType() };

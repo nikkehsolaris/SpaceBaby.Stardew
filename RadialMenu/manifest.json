@@ -1,9 +1,9 @@
 ﻿{
   "Name": "Radial Menu",
   "Author": "Brandon Marquis Markail Green (Space Baby)",
-  "Version": "0.0.1",
+  "Version": "0.0.2",
   "Description": "Turns Toolbar into a Secret of Mana-Style Radial Menu",
    "UniqueID": "SpaceBaby.RadialMenu",
   "EntryDll": "RadialMenu.dll",
-  "MinimumApiVersion": "3.0.0",
+  "MinimumApiVersion": "3.8.0",
 }
