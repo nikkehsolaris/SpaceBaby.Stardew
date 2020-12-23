@@ -1,10 +1,10 @@
 ﻿{
   "Name": "Stardew MIDI Interface Framework",
   "Author": "Brandon Marquis Markail Green (Space Baby)",
-  "Version": "0.0.1-0010",
+  "Version": "0.0.1-0011",
   "Description": "Allows the user to Utilize their MIDI Devices",
   "UniqueID": "SpaceBaby.MIDIFramework",
   "EntryDll": "SV_MidiInterface.dll",
-  "MinimumApiVersion": "3.0.0",
+  "MinimumApiVersion": "3.8.0",
   "UpdateKeys": []
 }
