@@ -5,6 +5,6 @@
   "Description": "Allows the User to change the color of the farm's water",
   "UniqueID": "SpaceBaby.AdjustableFarmWaterColor",
   "EntryDll": "AdjustableFarmWaterColor.dll",
-  "MinimumApiVersion": "3.1.0",
+  "MinimumApiVersion": "3.13.0",
   "UpdateKeys": []
 }

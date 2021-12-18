@@ -1,5 +1,5 @@
 using SpaceBaby.BetterQualityMoreSeeds.Framework;
-using Harmony;
+using HarmonyLib;
 using StardewModdingAPI;
 using StardewModdingAPI.Events;
 using StardewValley;
@@ -14,7 +14,7 @@ namespace SpaceBaby.BetterQualityMoreSeeds
     public class ModEntry : Mod
     {
         private bool hasAutomate;
-        private HarmonyInstance harmony;
+        private Harmony harmony;
 
         /*********
         ** Public methods
@@ -24,7 +24,7 @@ namespace SpaceBaby.BetterQualityMoreSeeds
         public override void Entry(IModHelper helper)
         {
             //Harmony instance for patching main game code
-            harmony = HarmonyInstance.Create(this.ModManifest.UniqueID);
+            harmony = new Harmony(this.ModManifest.UniqueID);
 
             helper.Events.GameLoop.GameLaunched += PatchSeedMaker;
             helper.Events.GameLoop.GameLaunched += CheckAutomate;
