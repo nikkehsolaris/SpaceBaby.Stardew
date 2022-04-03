@@ -9,7 +9,7 @@ namespace SpaceBaby.MidiInterface.Framework.Manager
 {
     public class MidiManager
     {
-        public IMidiAccess midi;
+        public IMidiAccess2 midi;
         public List<IMidiInput> inDevice;
         public byte prevEvent, prevValue;
         IMonitor Monitor;
@@ -18,7 +18,9 @@ namespace SpaceBaby.MidiInterface.Framework.Manager
         {
             this.Monitor = monitor;
             this.Monitor.Log("Initializing MIDI Framework", LogLevel.Info);
-            midi = MidiAccessManager.Default;
+            // As per managed-midi 1.9.14, MidiAccessManager.Default outputs an IMidiAccess.
+            // Casting it because making midi an IMidiAccess creates a warning:
+            midi = (IMidiAccess2)MidiAccessManager.Default;
             var numdevices = midi.Inputs.Count();
             if (numdevices <= 0)
             {
