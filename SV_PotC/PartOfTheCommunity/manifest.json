@@ -1,10 +1,10 @@
 {
   "Name": "Part of the Community",
-  "Author": "Brandon Marquis Markail Green (Space Baby)",
-  "Version": "1.1.6-4",
+  "Author": "Nikki864 and Brandon Marquis Markail Green (Space Baby)",
+  "Version": "1.2.0",
   "Description": "Lets you increase friendship by supporting the community.",
    "UniqueID": "SpaceBaby.PartOfTheCommunity",
   "EntryDll": "PartOfTheCommunity.dll",
-  "MinimumApiVersion": "3.8.0",
+  "MinimumApiVersion": "4.0.0",
   "UpdateKeys": [ "Nexus:923" ]
 }

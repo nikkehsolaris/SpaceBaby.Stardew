@@ -87,7 +87,7 @@ namespace SpaceBaby.PartOfTheCommunity
             this.Characters = this.GetCharacters();
             this.CurrentNumberOfCompletedBundles = ((CommunityCenter)Game1.getLocationFromName("CommunityCenter")).numberOfCompleteBundles();
             this.CurrentUniqueItemsShipped = Game1.player.basicShipped.Count();
-            this.CurrentNumberOfCompletedDailyQuests = Game1.stats.questsCompleted;
+            this.CurrentNumberOfCompletedDailyQuests = Game1.stats.QuestsCompleted;
             this.HasEnteredEvent = false;
 
             // init on first load
@@ -120,7 +120,7 @@ namespace SpaceBaby.PartOfTheCommunity
                 if (!this.PlayerData.HasGottenInitialKuumbaBonus)
                 {
                     int bonusPoints = this.Config.KuumbaBonus * this.CurrentUniqueItemsShipped;
-                    Utility.improveFriendshipWithEveryoneInRegion(Game1.player, bonusPoints, 2);
+                    Utility.improveFriendshipWithEveryoneInRegion(Game1.player,bonusPoints,"Town");
                     this.Monitor.Log($"Gained {bonusPoints} friendship for shipping {this.CurrentUniqueItemsShipped} unique {(this.CurrentUniqueItemsShipped != 1 ? "items" : "item")}", LogLevel.Info);
                     this.PlayerData.HasGottenInitialKuumbaBonus = true;
                 }
@@ -148,7 +148,7 @@ namespace SpaceBaby.PartOfTheCommunity
             List<Character> charactersWithinDistance = new List<Character>();
             foreach (NPC character in location.characters)
             {
-                if (character != null && Vector2.Distance(character.getTileLocation(), tile) <= tilesAway)
+                if (character != null && Vector2.Distance(character.Tile, tile) <= tilesAway)
                     charactersWithinDistance.Add(character);
             }
             return charactersWithinDistance;
@@ -185,7 +185,7 @@ namespace SpaceBaby.PartOfTheCommunity
                 {
                     if (!friend.HasTalked)
                     {
-                        IList<Character> charactersWithinDistance = ModEntry.AreThereCharactersWithinDistance(Game1.player.getTileLocation(), 20, Game1.player.currentLocation);
+                        List<Character> charactersWithinDistance = ModEntry.AreThereCharactersWithinDistance(Game1.player.Tile, 20, Game1.player.currentLocation);
                         foreach (Character nearbyNpc in charactersWithinDistance)
                         {
                             // get nearby character's info
@@ -238,7 +238,7 @@ namespace SpaceBaby.PartOfTheCommunity
             // check if player entered a festival
             if (!this.HasEnteredEvent && Game1.currentLocation?.currentEvent?.isFestival == true)
             {
-                Utility.improveFriendshipWithEveryoneInRegion(Game1.player, this.Config.UmojaBonusFestival, 2);
+                Utility.improveFriendshipWithEveryoneInRegion(Game1.player,this.Config.UmojaBonusFestival,"Town");
                 foreach (KeyValuePair<string, Friendship> pair in Game1.player.friendshipData.Pairs)
                 {
 					if ( pair.Key == null )
@@ -277,9 +277,9 @@ namespace SpaceBaby.PartOfTheCommunity
             }
 
             // check if player completed daily quest
-            if (Game1.stats.questsCompleted > this.CurrentNumberOfCompletedDailyQuests)
+            if (Game1.stats.QuestsCompleted > this.CurrentNumberOfCompletedDailyQuests)
             {
-                this.CurrentNumberOfCompletedDailyQuests = Game1.stats.questsCompleted;
+                this.CurrentNumberOfCompletedDailyQuests = Game1.stats.QuestsCompleted;
                 this.DaysAfterCompletingLastDailyQuest = 0;
                 this.HasRecentlyCompletedQuest = true;
             }
@@ -341,7 +341,7 @@ namespace SpaceBaby.PartOfTheCommunity
             if (this.DaysAfterCompletingLastDailyQuest < 3 && this.HasRecentlyCompletedQuest)
             {
                 int bonusPoints = this.Config.UjimaBonus / (int)Math.Pow(2, this.DaysAfterCompletingLastDailyQuest);
-                Utility.improveFriendshipWithEveryoneInRegion(Game1.player, bonusPoints, 2);
+                Utility.improveFriendshipWithEveryoneInRegion(Game1.player, bonusPoints, "Town");
                 this.Monitor.Log($"Gained {bonusPoints} friendship with everyone for completing a daily quest.", LogLevel.Info);
             }
             else
@@ -349,14 +349,14 @@ namespace SpaceBaby.PartOfTheCommunity
                 if (this.DaysAfterCompletingLastDailyQuest >= 3)
                     this.HasRecentlyCompletedQuest = false;
             }
-            if (!Utility.isFestivalDay(Game1.dayOfMonth + 1, Game1.currentSeason))
+            if (!Utility.isFestivalDay(Game1.dayOfMonth + 1, Game1.season))
                 this.DaysAfterCompletingLastDailyQuest++;
 
             // bonus for new shipped items
             if (Game1.player.basicShipped.Count() > this.CurrentUniqueItemsShipped)
             {
                 int bonusPoints = this.Config.KuumbaBonus * (Game1.player.basicShipped.Count() - this.CurrentUniqueItemsShipped);
-                Utility.improveFriendshipWithEveryoneInRegion(Game1.player, bonusPoints, 2);
+                Utility.improveFriendshipWithEveryoneInRegion(Game1.player, bonusPoints, "Town");
                 this.Monitor.Log($"Gained {bonusPoints} friendship with everyone for shipping new items.", LogLevel.Info);
             }
 
@@ -521,19 +521,19 @@ namespace SpaceBaby.PartOfTheCommunity
             }
 
             // add unknown NPCs
-            List<NPC> allCharacters = new List<NPC>();
-            Utility.getAllCharacters(allCharacters);
-            foreach (NPC npc in allCharacters)
+            List <NPC> Villagerss = Utility.getAllVillagers();
+            List<NPC> allCharacters = Utility.getAllCharacters();
+            foreach (NPC npc in Utility.getAllCharacters())
             {
-                if (npc.isVillager() && !characters.ContainsKey(npc.Name))
-                    characters[npc.Name] = new CharacterInfo(npc.Name, npc.Gender == NPC.male, type: CharacterType.Child);
+                if (npc.IsVillager && !characters.ContainsKey(npc.Name))
+                    characters[npc.Name] = new CharacterInfo(npc.Name, npc.Gender == Gender.Male, type: CharacterType.Child);
             }
 
             // add children
             foreach (Child childNpc in Game1.player.getChildren())
             {
                 // add child
-                CharacterInfo child = new CharacterInfo(childNpc.Name, isMale: childNpc.Gender == NPC.male);
+                CharacterInfo child = new CharacterInfo(childNpc.Name, isMale: childNpc.Gender == Gender.Male);
                 characters[child.Name] = child;
 
                 // add relationships
